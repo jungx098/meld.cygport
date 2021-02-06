@@ -1,0 +1,9 @@
+--- meld-3.20.2-1.noarch/origsrc/meld-3.20.2/setup.cfg	2020-02-15 14:32:20.000000000 -0800
++++ meld-3.20.2-1.noarch/src/meld-3.20.2/setup.cfg	2021-02-05 18:30:59.962481700 -0800
+@@ -7,3 +7,6 @@
+ # Import order check settings
+ import-order-style = edited
+ application-import-names = meld
++
++[install]
++prefix=/usr

@@ -1,0 +1,26 @@
+inherit python3-distutils gnome.org
+
+NAME="meld"
+VERSION=3.20.2
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="GNOME diff tool for files, directories, and VCS"
+DESCRIPTION="GNOME tool for analyzing two- and three-way diffs between files
+or directories, as well as several version control systems."
+HOMEPAGE="https://meldmerge.org/"
+
+ARCH=noarch
+
+REQUIRES="diffutils patch girepository-Gtk3.0 girepository-GtkSource3.0"
+
+# source and patch files
+SRC_URI="https://download.gnome.org/sources/meld/3.20/meld-${VERSION}.tar.xz"
+PATCH_URI="meld-3.20.2-1.patch"
+
+src_install() {
+	cd ${B}
+	python3_distutils_install --no-update-icon-cache --no-compile-schemas
+
+	dodir /usr/share/icons
+	cp -a ${S}/data/icons/*/ ${D}/usr/share/icons/
+}
