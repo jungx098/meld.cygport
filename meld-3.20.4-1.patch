@@ -1,0 +1,10 @@
+diff --color -Naur ./origsrc/meld-3.20.4/setup.cfg ./src/meld-3.20.4/setup.cfg
+--- ./origsrc/meld-3.20.4/setup.cfg	2021-08-12 23:44:12
++++ ./src/meld-3.20.4/setup.cfg	2023-02-11 05:46:53
+@@ -7,3 +7,6 @@
+ # Import order check settings
+ import-order-style = edited
+ application-import-names = meld
++
++[install]
++prefix=/usr

@@ -1,7 +1,7 @@
 inherit python3-distutils gnome.org
 
 NAME="meld"
-VERSION=3.20.2
+VERSION=3.20.4
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GNOME diff tool for files, directories, and VCS"
@@ -15,7 +15,7 @@ REQUIRES="diffutils patch girepository-Gtk3.0 girepository-GtkSource3.0"
 
 # source and patch files
 SRC_URI="https://download.gnome.org/sources/meld/3.20/meld-${VERSION}.tar.xz"
-PATCH_URI="meld-3.20.2-1.patch"
+PATCH_URI="meld-3.20.4-1.patch"
 
 src_install() {
 	cd ${B}
