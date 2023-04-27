@@ -52,7 +52,7 @@ $ cygport meld.cygport all
 -------------------------------------------------------------------------------
 ## Manual Install
 
-Extract the distribution package to `\`
+Extract the distribution package to `/`
 
 ```sh
 $ tar -C / -xvf ./meld-3.20.4-1.noarch/dist/meld/meld-3.20.4-1.tar.xz
